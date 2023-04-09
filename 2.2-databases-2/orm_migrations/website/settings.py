@@ -73,9 +73,11 @@ WSGI_APPLICATION = 'website.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'netology_orm_migrations',
+        'NAME': 'netology_orm_migrations_second_2',
         'HOST': '127.0.0.1',
         'PORT': '5432',
+        'USER':'postgres',
+        'PASSWORD': '86380029'
     }
 }
 
@@ -126,8 +128,8 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-try:
-    from .settings_local import *
-except ImportError:
-    pass
+# try:
+#     from .settings_local import *
+# except ImportError:
+#     pass
 
