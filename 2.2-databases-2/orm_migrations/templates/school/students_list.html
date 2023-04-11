@@ -8,6 +8,8 @@
   {% for student in object_list %}
     <li>{{ student.name }} {{ student.group }} <br> Преподаватель: {{ student.teachers.name }} {{ student.teachers.subject }}</li>
   {% endfor %}
+
+ 
   </ul>
 </div>
 {% endblock %}
