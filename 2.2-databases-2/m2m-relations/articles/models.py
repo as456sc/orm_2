@@ -26,7 +26,7 @@ class Scope(models.Model):
 
     def __str__(self):
         return self.tag_name
-    
+
 
 class ArticleScope(models.Model):
     article = models.ForeignKey(Article, on_delete=models.CASCADE,related_name='scopes')
@@ -38,6 +38,3 @@ class ArticleScope(models.Model):
 
 
 
-
-
-    
